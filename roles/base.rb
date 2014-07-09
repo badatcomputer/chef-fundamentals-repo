@@ -7,5 +7,8 @@ default_attributes(
     "config" => {
       "ssl_verify_mode" => ":verify_peer"
     }
+  },
+  "ohai" => {
+    "disabled_plugins" => [":Passwd"]
   }
 )
