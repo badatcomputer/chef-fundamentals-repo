@@ -23,10 +23,10 @@ module MyCompany
         report_string += "No resources changes by chef-client\n"
       end
 
-      Pony.mail ( :to => @to_address,
-                  :from => @from_address,
-                  :subject => subject,
-                  :body => report_string)
+      Pony.mail(:to => @to_address,
+                :from => @from_address,
+                :subject => subject,
+                :body => report_string)
     end #end report
   end #end class
 end #end Module

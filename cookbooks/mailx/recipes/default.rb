@@ -6,3 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+package node['mailutils']['mailx-package'] do
+  action :install
+end

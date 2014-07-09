@@ -1,6 +1,6 @@
 name "base"
 description "Base Server Role"
-run_list "recipe[chef-client::delete_validation]", "recipe[chef-client]",
+run_list "recipe[email_handler]","recipe[chef-client::delete_validation]", "recipe[chef-client]",
 "recipe[chef-client::config]","recipe[ntp]", "recipe[motd]", "recipe[users]"
 default_attributes(
   "chef-client" => {
